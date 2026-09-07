@@ -1,20 +1,38 @@
 # openmaus-skills
 
-Skill files imported into OpenMaus bots. Each folder under `skills/` holds one `SKILL.md`.
+Jorsby'nin kendi yazdığı OpenMaus skill'leri. Her klasör bir `SKILL.md` taşır; skill'in kaynağı burasıdır.
 
-Import into a bot: OpenMaus → bot → Skills → paste the folder URL, e.g.
-`https://github.com/jorsby/openmaus-skills/tree/main/skills/supabase`
+**Bota yüklemek:** OpenMaus → bot → Skills → şu URL'yi yapıştır:
 
-## Third-party skills
+```
+https://github.com/jorsby/openmaus-skills/tree/main/skills/<skill-adi>
+```
 
-| Skill | Upstream | License |
+## Skill'ler
+
+| Skill | Ne yapar | Kimde durur |
 |---|---|---|
-| supabase | https://github.com/supabase/agent-skills | MIT (`licenses/supabase-agent-skills-MIT.txt`) |
-| wrangler | https://github.com/cloudflare/skills | Apache-2.0 (`licenses/cloudflare-skills-Apache-2.0.txt`) |
-| workers-best-practices | https://github.com/cloudflare/skills | Apache-2.0 (`licenses/cloudflare-skills-Apache-2.0.txt`) |
+| `calisma-duzeni` | Serhat ile iletişim, onaylı işin planı, görev devri, sonuç raporu | CEO |
+| `company-rules` | Şirket kuralları, roller, kapsam sınırları, skill kaynağı | Yöneticiler |
+| `is-plani` | Onaylı işi adımlara ayırma, atama, doğrulanmış ilerleme | Yöneticiler |
+| `plain-writing` | Sade, kısa, insan gibi yazım (her dilde) | Yöneticiler, creator'lar |
+| `dev-flow` | Kod işi: kapsam, branch, doğrulama, PR, inceleme akışı | Geliştiriciler |
+| `review-ilkeleri` | Kod/PR incelemesinde doğruluk, kapsam, kanıt ölçütleri | Geliştiriciler |
 
-These copies were exported on 6 Sep 2026 with their reference files inlined; see upstream for the latest versions.
+## Dışarıdan alınan skill'ler
 
-## Own skills
+Bunlar bu repoda **tutulmaz**; sahipleri güncelledikçe doğrudan kendi repolarından yüklenir.
 
-`dev-flow`, `review-ilkeleri`, `plain-writing` are Jorsby's internal working guides, published so OpenMaus can import them. No license is granted for reuse.
+| Skill | Yapıştırılacak URL | Kimde durur |
+|---|---|---|
+| `supabase` | https://github.com/supabase/agent-skills/tree/main/skills/supabase | Geliştiriciler |
+| `wrangler` | https://github.com/cloudflare/skills/tree/main/skills/wrangler | Studio geliştiricileri |
+| `workers-best-practices` | https://github.com/cloudflare/skills/tree/main/skills/workers-best-practices | Studio geliştiricileri |
+
+Not: OpenMaus yalnız skill klasöründeki düz `.md` dosyalarını alır. `references/` ve `assets/` alt klasörleri gelmez; ayrıntı için botlar Cloudflare ve Supabase dokümantasyon araçlarını kullanır.
+
+## Kurallar
+
+- Skill düzenlemesi bu repoda yapılır: commit + push, sonra botta sil + yeniden yükle. OpenMaus aynı adla ikinci yüklemeyi kabul etmez.
+- Klasör adı = skill adı: kebab-case, sürüm eki yok.
+- Ürün bilgisi skill'e değil ürün repo'sunun `AGENTS.md` dosyasına yazılır.
