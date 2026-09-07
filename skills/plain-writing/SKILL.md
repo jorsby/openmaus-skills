@@ -95,7 +95,7 @@ export const meta = {
     { title: 'Judge', detail: '6 kör hakem' },
   ],
 }
-const LAB = '/Users/serhatcamici/Development/skill-lab/writing'
+const LAB = './skill-lab/writing'
 const SAMPLES = {
   en_marketing: `In today's fast-paced digital landscape, leveraging cutting-edge AI-powered solutions is not just an option—it's a necessity. Our revolutionary platform seamlessly empowers creators to unlock unprecedented levels of productivity, transforming the way content is crafted. Whether you're a seasoned professional or just starting your journey, this game-changing tool is designed to elevate your workflow to new heights. Let's dive in and explore how it works!`,
   en_explainer: `Great question! Understanding how caching works is absolutely crucial for building performant applications. Let's break it down step by step. At its core, caching is all about storing frequently accessed data in a faster storage layer. This might seem simple, but there are several key considerations to keep in mind. First and foremost, you need to think about cache invalidation—arguably one of the hardest problems in computer science. Additionally, it's worth noting that different caching strategies have different trade-offs. In summary, caching is a powerful tool, but it's important to use it wisely!`,
