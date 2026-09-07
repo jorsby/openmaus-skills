@@ -3,10 +3,6 @@ name: is-plani
 description: OpenMaus botlarının onaylı işi küçük adımlara ayırması, çalışanlara ataması ve doğrulanmış ilerlemeyi göstermesi.
 ---
 
-> OpenMaus içinde yönetilir. Köken: Mevcut yerel skill; 6 Eylül 2026 aktarımı.
-> Yeni içeriği Skills ekranında inceleyip etkinleştir. Bu dosya eski kütüphaneden senkronize edilmez.
-
-
 # İş Planı
 
 İlk planı konuşmada hazırla: hedef, kapsam, ölçülebilir bitiş koşulu ve gerekli adımlar. Bir adım için ayrı teslimat gerekmiyorsa yeni ana iş oluşturma. Kullanıcının mevcut onayı varsa tekrar sorma.

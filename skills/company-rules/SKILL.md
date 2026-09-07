@@ -3,10 +3,6 @@ name: company-rules
 description: Jorsby şirket kuralları, roller, kapsam sınırları ve skill kaynağı.
 ---
 
-> OpenMaus içinde yönetilir. Köken: Multica studio, bridge; 6 Eylül 2026 dışa aktarımı.
-> Yeni içeriği Skills ekranında inceleyip etkinleştir. Bu dosya eski kütüphaneden senkronize edilmez.
-
-
 # Company Rules — Jorsby
 
 - Kısa, Türkçe, somut konuş: ne oldu · senden ne isteniyor · link. Kullanıcı ayrıntı isterse gereken kadar aç.
@@ -26,14 +22,11 @@ description: Jorsby şirket kuralları, roller, kapsam sınırları ve skill kay
 - **Multica**: devre dışına alınan eski sistem. Otomatik ticket açma, status değiştirme, agent tetikleme veya daemon başlatma yok. Geçmişe erişmek için yeniden açılması ayrı kullanıcı isteğidir.
 
 ## Skill kaynağı ve yönetimi
-- Skill içeriği ve etkinlik kayıtları OpenMaus'tadır. Ekleme, inceleme, açma/kapatma ve silme buradan yönetilir.
-- CEO'nun Skills ekranında taşınan kataloğun tamamı bulunur. Diğer botların kayıtları iş alanına göre seçilir. Katalogda bulunmak, skill'in etkin olduğu veya CEO'nun üretim yapacağı anlamına gelmez.
-- OpenMaus her botun kaydını ayrı tutar. Bir bottaki düzenleme ya da silme diğer botlara kendiliğinden yayılmaz; kullanıcı istemeden silinen skill'i geri ekleme.
-- Eski dış kütüphane ve sync yalnız geçmiş/yedektir; çalışma sırasında onlardan içerik okuma veya dağıtım çalıştırma.
-- Yeni/değişen içerik uygulamanın incelemesi için kapalı gelir. Kapalı skill'i listede olduğu için talimat olarak yükleme. Etkinlik seçimi OpenMaus Skills ekranından yapılır.
-- Bu aktarımda Multica paketlerinin metin ekleri aynı SKILL.md içinde, dosya adları ve hash'leriyle bulunur. Göreli paket yollarını ilgili “Paket eki” bölümünden oku; disk üzerinde script varmış gibi davranma.
-- Dış skill'in köken kaydı taşınan sürümü belirtir. Yeni sürüm gerektiğinde asıl yayıncıyı doğrula ve OpenMaus'ta yeniden incelemeye sun; Multica refresh çalıştırma.
-- Eski Multica skill'leri kullanıcı incelemesi için saklanır; bunların varlığı Multica'yı başlatma veya üretim tetikleme yetkisi vermez.
+- Bizim yazdığımız skill'lerin kaynağı `github.com/jorsby/openmaus-skills` deposudur. Hazır (dış) skill'ler sahibinin herkese açık deposundan yüklenir; kopyası tutulmaz.
+- Skill bir bota yalnız OpenMaus Skills ekranından eklenir, açılır/kapatılır ve silinir. Kayıtlar bot başına ayrıdır; bir bottaki değişiklik diğerine yayılmaz. Kullanıcı istemeden silinen skill'i geri ekleme.
+- Yeni veya değişen içerik incelemeye kapalı gelir. Kapalı skill'i listede olduğu için talimat olarak yükleme.
+- Yerleşim: ürün bilgisi ürün deposunun AGENTS.md dosyasında, takım kuralları bölüm bağlamında (section context), rol SOUL'da durur. Skill yalnız yetenek ve yöntem anlatır.
+- Eski kütüphane (`~/Work/jorsby-skills`) ve Multica yalnız yedektir; onlardan içerik okuma, sync çalıştırma.
 
 ## Hafıza
 - Nasıl yapılır bilgisi skill'e; şirketin kalıcı bilgisi Supermemory'ye; kişiye özgü not kendi MEMORY.md'sine aittir.

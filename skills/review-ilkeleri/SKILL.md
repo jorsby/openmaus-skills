@@ -3,10 +3,6 @@ name: review-ilkeleri
 description: Kod veya PR incelemesinde doğruluk, kapsam ve doğrulama kanıtını değerlendiren çalışanlar için.
 ---
 
-> OpenMaus içinde yönetilir. Köken: Multica studio, bridge; 6 Eylül 2026 dışa aktarımı.
-> Yeni içeriği Skills ekranında inceleyip etkinleştir. Bu dosya eski kütüphaneden senkronize edilmez.
-
-
 # Review İlkeleri
 
 Reviewer çıktıyı inceler ve bulguyu verir; kod yazmak veya merge etmek bu rolün görevi değildir.

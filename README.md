@@ -18,10 +18,17 @@ https://github.com/jorsby/openmaus-skills/tree/main/skills/<skill-adi>
 | `plain-writing` | Sade, kısa, insan gibi yazım (her dilde) | Yöneticiler, creator'lar |
 | `dev-flow` | Kod işi: kapsam, branch, doğrulama, PR, inceleme akışı | Geliştiriciler |
 | `review-ilkeleri` | Kod/PR incelemesinde doğruluk, kapsam, kanıt ölçütleri | Geliştiriciler |
+| `serhat-1v1` | Serhat ile doğrudan, küçük ve onaylı adımlarla çalışma | Geliştiriciler, creator'lar |
+
+## Repoda olmayanlar
+
+- `jorsby-studio`: ürün içi bilgi; kaynağı Studio deposu (`skills/studio/`). Yerini `jstudio-cli` alacak.
+- `jorsby-bridge`: Bridge deposunun AGENTS.md dosyasına taşındı, skill olarak emekli.
+- `cinematic-video`, `faceless-video`: eski elle üretim hattı, emekli.
 
 ## Dışarıdan alınan skill'ler
 
-Bunlar bu repoda **tutulmaz**; sahipleri güncelledikçe doğrudan kendi repolarından yüklenir.
+Varsayılan hazır skill'dir; kendi skill'imizi yalnız bize özel bir iş için yazarız. Hazır skill'ler bu repoda **tutulmaz**; sahipleri güncelledikçe doğrudan kendi repolarından yüklenir.
 
 | Skill | Yapıştırılacak URL | Kimde durur |
 |---|---|---|

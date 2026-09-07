@@ -3,10 +3,6 @@ name: dev-flow
 description: Kod işi yapan çalışanlar için kapsam, branch, doğrulama, PR ve inceleme akışı.
 ---
 
-> OpenMaus içinde yönetilir. Köken: Multica studio, bridge; 6 Eylül 2026 dışa aktarımı.
-> Yeni içeriği Skills ekranında inceleyip etkinleştir. Bu dosya eski kütüphaneden senkronize edilmez.
-
-
 # Dev Flow
 
 Bu skill kod işi atanmış çalışana aittir; yönetici botun üretim yasağını kaldırmaz.

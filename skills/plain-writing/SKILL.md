@@ -3,9 +3,7 @@ name: plain-writing
 description: Plain, short, human prose in any language. Use for every draft, answer, rewrite or marketing text.
 ---
 
-> OpenMaus içinde yönetilir. Köken: Multica studio; 6 Eylül 2026 dışa aktarımı.
-> Yeni içeriği Skills ekranında inceleyip etkinleştir. Bu dosya eski kütüphaneden senkronize edilmez.
-> Paket ekleri aşağıda “Paket eki” başlıklarında tam metindir. Metindeki göreli paket yolları bu bölümlere karşılık gelir. Yalnız ihtiyaç duyulan bölümü oku. Scriptler disk üzerinde kurulu değildir; çalıştırma gerekirse onaylanan iş kapsamında geçici dosyaya çıkarılıp doğrulanır.
+> Ek dosyalar (eval README ve blind-eval script) aşağıda “Paket eki” başlıklarında tam metin olarak yer alır; metindeki göreli yollar bu bölümlere karşılık gelir.
 
 <!-- v3.1 after blind round 5: lead-in stays only if what it announces follows; 'whether you're' kept when natural; contractions and everyday phrasing allowed. -->
 
