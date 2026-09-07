@@ -1,45 +1,27 @@
 # openmaus-skills
 
-Jorsby'nin kendi yazdığı OpenMaus skill'leri. Her klasör bir `SKILL.md` taşır; skill'in kaynağı burasıdır.
+Jorsby'ye özel üç OpenMaus skill'i. Her klasörde tek bir `SKILL.md` var; kaynak burasıdır, düzenleme elle yapılır.
 
-**Bota yüklemek:** OpenMaus → bot → Skills → şu URL'yi yapıştır:
+**Bota yüklemek:** OpenMaus → bot → Skills → klasör URL'sini yapıştır.
 
 ```
-https://github.com/jorsby/openmaus-skills/tree/main/skills/<skill-adi>
+https://github.com/jorsby/openmaus-skills/tree/main/skills/cinematic-video-production
+https://github.com/jorsby/openmaus-skills/tree/main/skills/faceless-video-production
+https://github.com/jorsby/openmaus-skills/tree/main/skills/jstudio
 ```
 
-## Skill'ler
+| Skill | Ne anlatır |
+|---|---|
+| `cinematic-video-production` | Sinematik video üretim hattı |
+| `faceless-video-production` | Faceless video üretim hattı |
+| `jstudio` | Jorsby Studio v2 ile proje kurma, üretim, inceleme, teslim (play'ler ve op listesi gömülü) |
 
-| Skill | Ne yapar | Kimde durur |
-|---|---|---|
-| `calisma-duzeni` | Serhat ile iletişim, onaylı işin planı, görev devri, sonuç raporu | CEO |
-| `company-rules` | Şirket kuralları, roller, kapsam sınırları, skill kaynağı | Yöneticiler |
-| `is-plani` | Onaylı işi adımlara ayırma, atama, doğrulanmış ilerleme | Yöneticiler |
-| `plain-writing` | Sade, kısa, insan gibi yazım (her dilde) | Yöneticiler, creator'lar |
-| `dev-flow` | Kod işi: kapsam, branch, doğrulama, PR, inceleme akışı | Geliştiriciler |
-| `review-ilkeleri` | Kod/PR incelemesinde doğruluk, kapsam, kanıt ölçütleri | Geliştiriciler |
-| `serhat-1v1` | Serhat ile doğrudan, küçük ve onaylı adımlarla çalışma | Geliştiriciler, creator'lar |
+OpenMaus yalnız `SKILL.md` dosyasını kurar; ek dosyalar gelmez. Bu yüzden referans metinleri dosyanın sonunda "Paket eki" başlıkları altında gömülüdür.
 
-## Repoda olmayanlar
+**Hazır skill'ler** bu repoda tutulmaz, sahibinin reposundan yüklenir. Örnek:
 
-- `jorsby-studio`: ürün içi bilgi; kaynağı Studio deposu (`skills/studio/`). Yerini `jstudio-cli` alacak.
-- `jorsby-bridge`: Bridge deposunun AGENTS.md dosyasına taşındı, skill olarak emekli.
-- `cinematic-video`, `faceless-video`: eski elle üretim hattı, emekli.
+- Supabase: https://github.com/supabase/agent-skills/tree/main/skills/supabase
+- Wrangler: https://github.com/cloudflare/skills/tree/main/skills/wrangler
+- Workers best practices: https://github.com/cloudflare/skills/tree/main/skills/workers-best-practices
 
-## Dışarıdan alınan skill'ler
-
-Varsayılan hazır skill'dir; kendi skill'imizi yalnız bize özel bir iş için yazarız. Hazır skill'ler bu repoda **tutulmaz**; sahipleri güncelledikçe doğrudan kendi repolarından yüklenir.
-
-| Skill | Yapıştırılacak URL | Kimde durur |
-|---|---|---|
-| `supabase` | https://github.com/supabase/agent-skills/tree/main/skills/supabase | Geliştiriciler |
-| `wrangler` | https://github.com/cloudflare/skills/tree/main/skills/wrangler | Studio geliştiricileri |
-| `workers-best-practices` | https://github.com/cloudflare/skills/tree/main/skills/workers-best-practices | Studio geliştiricileri |
-
-Not: OpenMaus yalnız skill klasöründeki düz `.md` dosyalarını alır. `references/` ve `assets/` alt klasörleri gelmez; ayrıntı için botlar Cloudflare ve Supabase dokümantasyon araçlarını kullanır.
-
-## Kurallar
-
-- Skill düzenlemesi bu repoda yapılır: commit + push, sonra botta sil + yeniden yükle. OpenMaus aynı adla ikinci yüklemeyi kabul etmez.
-- Klasör adı = skill adı: kebab-case, sürüm eki yok.
-- Ürün bilgisi skill'e değil ürün repo'sunun `AGENTS.md` dosyasına yazılır.
+**Güncelleme:** burada düzenle, commit + push; botta eskisini sil, yeniden yükle. OpenMaus aynı adla ikinci yüklemeyi kabul etmez.
